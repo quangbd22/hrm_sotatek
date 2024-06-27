@@ -1,0 +1,401 @@
+version: "3.1"
+
+nlu:  
+- intent: faq/recruitment_condition
+  examples: |
+    - Cần những điều kiện nào để được tuyển dụng
+    - Yêu cầu tuyển dụng cho vị trí này là gì?
+    - Điều kiện cần thiết để ứng tuyển vào công ty là gì?
+    - Công ty có những tiêu chí tuyển dụng nào?
+    - Những kỹ năng nào được yêu cầu để làm việc tại đây?
+    - Trình độ học vấn cần có để được nhận vào làm là gì?
+    - Kinh nghiệm làm việc cần có cho vị trí này là gì?
+    - Có yêu cầu đặc biệt nào về chứng chỉ hay bằng cấp không?
+    - Những phẩm chất cá nhân nào là cần thiết để được tuyển dụng?
+    - Quy trình tuyển dụng của công ty như thế nào?
+    - Có yêu cầu gì về khả năng ngoại ngữ không?
+    - Những yếu tố nào được xem xét khi xét tuyển?
+    - Công ty đánh giá ứng viên dựa trên tiêu chí nào?
+    - Có cần phải vượt qua bài kiểm tra nào không?
+    - Công ty có yêu cầu gì về sức khỏe hay không?
+    - Có những tiêu chuẩn nào về đạo đức nghề nghiệp không?
+    - Công ty có ưu tiên ứng viên có kinh nghiệm trong lĩnh vực nào không?
+    - Những kỹ năng mềm nào là quan trọng cho vị trí này?
+    - Công ty tìm kiếm những đặc điểm gì ở ứng viên lý tưởng?
+    
+
+- intent: faq/recruitment_file
+  examples: |
+    - Hồ sơ tuyển dụng  gồm những cái gì
+    - Hồ sơ xin việc cần có những giấy tờ gì?
+    - Ứng viên cần chuẩn bị gì cho buổi phỏng vấn?
+    - Những tài liệu cần chuẩn bị khi nộp hồ sơ tuyển dụng là gì?
+    - Để nộp đơn xin việc, tôi cần chuẩn bị những gì?
+    - Có yêu cầu cụ thể nào về các giấy tờ trong hồ sơ không?
+    - Công ty yêu cầu những tài liệu nào khi ứng tuyển?
+    - Những giấy tờ bắt buộc trong bộ hồ sơ xin việc là gì?
+    - Có cần cung cấp bản sao bằng cấp và chứng chỉ không?
+    - Thư xin việc cần bao gồm những thông tin gì?
+    - CV cần có những mục nào để hoàn chỉnh?
+    - Công ty có mẫu đơn xin việc cụ thể nào không?
+    - Hồ sơ có cần thêm thư giới thiệu không?
+    - Có yêu cầu gửi kèm ảnh trong hồ sơ không?
+    - Những thông tin cá nhân nào cần có trong hồ sơ?
+    - Hồ sơ có cần đính kèm các giấy tờ liên quan đến kinh nghiệm làm việc không?
+    - Các giấy tờ chứng minh thành tích cá nhân có cần nộp kèm không?
+    - Công ty có yêu cầu bản sao giấy khai sinh hoặc sổ hộ khẩu không?
+    - Hồ sơ có cần đính kèm giấy khám sức khỏe không?
+    - Có cần bản sao các giấy tờ tùy thân như chứng minh nhân dân hoặc hộ chiếu không?
+    - Có cần bản sao các giấy tờ tùy thân như chứng minh thư hoặc căn cước công dân không?
+    - Công ty có yêu cầu gì về định dạng và cách trình bày hồ sơ không?
+    - Hồ sơ tuyển dụng cần gửi qua email hay nộp trực tiếp?
+
+- intent: faq/contract_type
+  examples: |
+    - Có những loại hợp đồng nào
+    - Các loại hợp đồng lao động hiện nay là gì?
+    - Có những hình thức hợp đồng nào trong công ty?
+    - Hợp đồng lao động được phân loại như thế nào?
+    - Những dạng hợp đồng phổ biến trong doanh nghiệp là gì?
+    - Hợp đồng ngắn hạn và dài hạn khác nhau như thế nào?
+    - Công ty sử dụng những loại hợp đồng lao động nào?
+    - Có các loại hợp đồng thực tập nào?
+    - Hợp đồng thời vụ là gì?
+    - Hợp đồng thử việc kéo dài bao lâu?
+    - Có những loại hợp đồng làm việc bán thời gian nào?
+    - Hợp đồng làm việc từ xa khác gì so với hợp đồng truyền thống?
+    - Có những loại hợp đồng khoán việc nào?
+    - Hợp đồng lao động vô thời hạn có những đặc điểm gì?
+    - Hợp đồng lao động có thời hạn gồm những điều khoản nào?
+    - Hợp đồng làm việc toàn thời gian có yêu cầu gì đặc biệt?
+    - Hợp đồng cộng tác viên là gì?
+    - Hợp đồng dịch vụ và hợp đồng lao động khác nhau ra sao?
+    - Có những loại hợp đồng nào cho nhân viên tạm thời?
+    - Hợp đồng lao động có thể thay đổi như thế nào theo luật pháp hiện hành?
+    - Hợp đồng freelance có những điều khoản gì đặc biệt?
+
+- intent: faq/official_contract #
+  examples: |
+    - Khi nào thì tôi được ký hợp đồng chính thức
+    - Bao lâu sau khi thử việc thì tôi được ký hợp đồng chính thức?
+    - Điều kiện để được ký hợp đồng chính thức là gì?
+    - Thời gian thử việc kéo dài bao lâu trước khi ký hợp đồng chính thức?
+    - Khi nào tôi có thể chuyển từ hợp đồng thử việc sang hợp đồng chính thức?
+    - Có yêu cầu gì đặc biệt để được ký hợp đồng chính thức không?
+    - Khi nào công ty xem xét ký hợp đồng lao động dài hạn?
+    - Quá trình đánh giá để ký hợp đồng chính thức diễn ra như thế nào?
+    - Thời điểm nào tôi sẽ biết kết quả về việc ký hợp đồng chính thức?
+    - Tôi cần phải hoàn thành những tiêu chí nào để được ký hợp đồng chính thức?
+    - Khi nào tôi có thể thảo luận về việc ký hợp đồng chính thức?
+    - Có cần trải qua bao nhiêu vòng đánh giá trước khi được ký hợp đồng chính thức?
+    - Công ty thường ký hợp đồng chính thức sau bao lâu làm việc thử?
+    - Tôi cần phải chứng minh điều gì để được kí hợp đồng chính thức? # typo example
+    - Các bước để tiến tới kí hợp đồng chính thức là gì? # typo example
+    - Có trường hợp nào mà thời gian thử việc kéo dài hơn dự kiến không?
+    - Tôi có thể đàm phán thời gian kí hợp đồng chính thức không? # typo example
+    - Khi nào tôi sẽ nhận được thông báo chính thức về hợp đồng dài hạn?
+    - Quy định của công ty về việc kí hợp đồng chính thức như thế nào? # typo example
+    - Tôi có thể hỏi ai về tiến trình kí hợp đồng chính thức? # typo example
+
+- intent: faq/official_staff
+  examples: |
+    - Cần những yêu cầu nào để được trở thành nhân viên chính thức
+    - Để trở thành nhân viên chính thức, cần phải làm gì?
+    - Những điều kiện gì cần phải đạt để được coi là nhân viên chính thức?
+    - Quy trình nào cần phải tuân thủ để trở thành nhân viên chính thức?
+    - Các bước cụ thể nào là cần thiết để gia nhập vào đội ngũ nhân viên chính thức?
+    - Làm thế nào để xin trở thành nhân viên cố định?
+    - Có những yêu cầu gì đặc biệt cần phải đáp ứng để được coi là nhân viên chính thức?
+    - Cần phải có kinh nghiệm làm việc trước đó không để trở thành nhân viên chính thức?
+    - Có cần phải hoàn thành khóa học hoặc đào tạo nào không để trở thành nhân viên chính thức?
+    - Làm thế nào để biết mình đã đủ điều kiện để trở thành nhân viên chính thức?
+    - Thủ tục nào cần phải thực hiện để đạt được tư cách nhân viên chính thức?
+    - Có những yêu cầu nào về văn bằng hoặc bằng cấp không để trở thành nhân viên chính thức?
+    - Có cần phải trải qua quá trình phỏng vấn không để trở thành nhân viên chính thức?
+    - Đối với các vị trí cụ thể, cần có kỹ năng hay kinh nghiệm đặc biệt nào không để trở thành nhân viên chính thức?
+    - Làm thế nào để biết mình đã được chấp nhận làm nhân viên chính thức?
+    - Có cần phải có bảo hiểm y tế hoặc bảo hiểm xã hội không để trở thành nhân viên chính thức?
+    - Làm thế nào để theo dõi tiến trình xin trở thành nhân viên chính thức?
+    - Có những yêu cầu gì liên quan đến tuổi tác hoặc quốc tịch không để trở thành nhân viên chính thức?
+    - Cần phải chuẩn bị những tài liệu gì để đăng ký trở thành nhân viên chính thức?
+    - Làm thế nào để biết mình đã hoàn thành các bước cần thiết để trở thành nhân viên chính thức?
+    - Có cần phải ký hợp đồng lao động hay các tài liệu pháp lý khác không khi trở thành nhân viên chính thức?
+
+- intent: faq/working_time
+  examples: |
+    - Thời gian làm việc của tôi ở công ty như nào
+    - Làm sao để biết thời gian làm việc ở công ty?
+    - Thời gian làm việc của tôi tại công ty là bao nhiêu giờ mỗi ngày?
+    - Có quy định cụ thể về giờ làm việc không?
+    - Thời gian bắt đầu và kết thúc làm việc hàng ngày là khi nào?
+    - Có bao nhiêu giờ làm việc mỗi tuần?
+    - Thời gian làm việc có linh hoạt không?
+    - Thời gian nghỉ giữa các ca làm việc là bao nhiêu?
+    - Thời gian nghỉ trưa là bao lâu?
+    - Có ngày làm việc ngoài giờ hàng tuần không?
+    - Có sự linh hoạt nào trong việc sắp xếp thời gian làm việc không?
+    - Thời gian làm việc có ảnh hưởng đến việc tham gia các hoạt động bên ngoài không?
+    - Có chính sách nào về làm việc vào cuối tuần không?
+    - Có hỗ trợ nào cho việc làm việc theo ca hay làm việc theo giờ không?
+    - Có chính sách nào về thời gian làm việc linh hoạt cho phụ nữ mang thai hoặc người nuôi con nhỏ không?
+    - Thời gian làm việc và điều kiện làm việc ra sao?
+    - Bắt đầu làm việc từ mấy giờ?
+    
+
+- intent: faq/day_off
+  examples: |
+    - Tôi có những ngày nghỉ nào trong năm
+    - Có những ngày nghỉ lễ nào trong năm?
+    - Có bao nhiêu ngày nghỉ trong năm?
+    - Có ngày nghỉ nào trong tuần không?
+    - Ngày nghỉ Tết âm lịch được tính vào không?
+    - Có những ngày nghỉ bổ sung nào không nằm trong lịch lễ truyền thống?
+    - Có những ngày nghỉ đặc biệt nào được công ty tạo ra không?
+    - Có ngày nghỉ nào dành riêng cho nhóm nhân viên không?
+    - Có ngày nghỉ phục vụ cho các hoạt động xã hội hoặc từ thiện không?
+    - Có chính sách nào về ngày nghỉ bù cho những ngày làm việc ngoài giờ không?
+    - Có ngày nghỉ phục vụ cho việc đào tạo hay hội thảo không?
+    - Có ngày nghỉ linh hoạt cho việc thăm gia đình không?
+    - Có ngày nghỉ bổ sung nào cho nhân viên có tuổi cao hay người khuyết tật không?
+    - Có ngày nghỉ nào dành cho việc tổ chức các sự kiện nội bộ của công ty không?
+    - Có ngày nghỉ dành cho việc làm đẹp tinh thần và sức khỏe của nhân viên không?
+    - Có ngày nghỉ nào dành cho việc tự do sáng tạo hoặc phát triển cá nhân không?
+    - Có ngày nghỉ bổ sung nào liên quan đến quyền lợi của người lao động không?
+    - Có ngày nghỉ linh hoạt dành cho việc tham gia các hoạt động cộng đồng không?
+    - Có ngày nghỉ nào dành cho việc du lịch hoặc nghỉ ngơi đặc biệt không?
+    - Có ngày nghỉ đặc biệt dành cho việc kỷ niệm các sự kiện quan trọng trong lịch sử hoặc văn hóa không?
+    - Có ngày nghỉ nào dành cho việc tổ chức các hoạt động team building hoặc gắn kết nhóm không?
+    - Có chính sách nào về việc thay đổi hoặc điều chỉnh ngày nghỉ không?
+    
+- intent: faq/day_off_wage
+  examples: |
+    - Nghỉ việc riêng có được hưởng lương k
+    - Nhân viên nghỉ việc riêng có được hưởng lương không?
+    - Có chính sách cụ thể nào về việc hưởng lương khi nghỉ việc riêng không?
+    - Quy định về việc hưởng lương khi nghỉ việc riêng là gì?
+    - Có các điều kiện nào cần thỏa mãn để được hưởng lương khi nghỉ việc riêng không?
+    - Lương được tính toán như thế nào khi nhân viên nghỉ việc riêng?
+    - Có mức lương cố định được hưởng khi nghỉ việc riêng không?
+    - Có sự khác biệt trong cách tính lương khi nghỉ việc riêng so với lương thường không?
+    - Có quy định nào về thời gian nghỉ việc riêng được hưởng lương không?
+    - Lương khi nghỉ việc riêng có được tính vào lương cơ bản hàng tháng không?
+    - Có phương thức tính lương cụ thể khi nhân viên nghỉ việc riêng không?
+    - Có sự khác biệt trong việc tính lương khi nghỉ việc riêng theo thời gian làm việc không?
+    - Có mức lương khác nhau cho những loại nghỉ việc riêng khác nhau không?
+    - Có quy định cụ thể về việc thanh toán lương khi nhân viên nghỉ việc riêng không đúng hạn không?
+    - Có biện pháp nào để kiểm tra tính chính xác của tiền lương khi nghỉ việc cá nhân?
+    - Có cách nào để đảm bảo rằng lương khi nghỉ việc cá nhân được tính đúng cách không?
+    - Có sự kiểm tra hoặc xác nhận nào về tính toán tiền lương khi nghỉ việc cá nhân không?
+    - Làm thế nào để yêu cầu kiểm tra hoặc làm rõ về tiền lương khi nghỉ việc gia đình nếu cần thiết?
+    - Có chính sách nào về việc sửa đổi hoặc điều chỉnh tiền lương khi nghỉ việc gia đình không?
+    - Có phương pháp tính toán lương dựa trên số ngày nghỉ việc gia đình không?
+    - Có chính sách nào về việc cung cấp thông tin trước về tiền lương khi nghỉ việc gia đình không?
+
+- intent: faq/on_leave
+  examples: |
+    - Tôi có những loại nghỉ phép nào
+    - Có chính sách nào về nghỉ phép không?
+    - Có những loại nghỉ phép cụ thể nào tôi có thể đăng ký?
+    - Nghỉ phép có được chia thành các loại khác nhau không?
+    - Quy định về các loại nghỉ phép là gì?
+    - Có mức hưởng lương khác nhau cho từng loại nghỉ phép không?
+    - Loại nghỉ phép nào được xem xét là nghỉ phép trả lương và loại nào không?
+    - Có quy định cụ thể nào về việc đăng ký nghỉ phép không?
+    - Có loại nghỉ phép nào yêu cầu sự phê duyệt đặc biệt không?
+    - Có quy định về thời gian tối thiểu đăng ký nghỉ phép không?
+    - Có các biểu mẫu hoặc tài liệu nào cần điền khi đăng ký nghỉ phép không?
+    - Có quy định nào về số lần nghỉ phép tối đa trong một thời gian nhất định không?
+    - Có loại nghỉ phép nào được ưu tiên xét duyệt hơn trong trường hợp quá tải không?
+    - Có quy định về việc đồng thuận hoặc từ chối nghỉ phép không?
+    - Có cách nào để đăng ký nghỉ ốm một cách linh hoạt hoặc gấp gáp không?
+    - Có quy định về việc thay đổi hoặc hủy bỏ nghỉ phép đã đăng ký không?
+    - Có các biện pháp nào để đảm bảo rằng nhân viên đã đăng ký nghỉ phép được thông báo kịp thời không?
+    - Có quy định về việc thẩm định lại nghỉ phép sau khi đã được đăng ký không?
+    - Có loại nghỉ có phép nào được ưu tiên xét duyệt trong trường hợp khẩn cấp hoặc tình huống đặc biệt không?
+    - Có các biện pháp hỗ trợ hoặc chính sách phòng ngừa cho những trường hợp cần nghỉ có phép không?
+  
+- intent: faq/marriage_leave_policy
+  examples: |
+    - Tôi muốn nghỉ cưới thì công ty có những chính sách hỗ trợ nào
+    - Công ty có chính sách nghỉ cưới trợ cấp cho nhân viên không?
+    - Quy định về nghỉ cưới của công ty là gì?
+    - Có thời gian nghỉ cưới cố định không hoặc được quy định theo quy định pháp luật?
+    - Có hỗ trợ tài chính nào được cung cấp cho nhân viên nghỉ cưới không?
+    - Công ty có chính sách phụ cấp nào cho nhân viên kết hôn không?
+    - Có điều kiện nào để được hưởng nghỉ cưới và hỗ trợ liên quan không?
+    - Có sự khác biệt về quyền lợi giữa nhân viên kết hôn và nhân viên không kết hôn không?
+    - Có quy định về thời gian nghỉ cưới tối thiểu và tối đa không?
+    - Có các biểu mẫu hoặc tài liệu cần thiết để đăng ký nghỉ cưới không?
+    - Có quy trình xác nhận hoặc phê duyệt đặc biệt nào cho nghỉ cưới không?
+    - Có cơ hội nghỉ phép bổ sung hoặc nghỉ không tính vào kỳ công cho nhân viên nghỉ cưới không?
+    - Có chương trình hỗ trợ tâm lý hoặc tư vấn cho nhân viên trước hoặc sau thời gian nghỉ cưới không?
+    - Có quy định nào về việc chia nhỏ thời gian nghỉ cưới thành nhiều phần không?
+    - Có chính sách nào về việc trở lại làm việc sau thời gian kết hôn không?
+    - Có quy định về việc thanh toán lương hoặc phụ cấp trong thời gian nghỉ cưới không?
+    - Có chính sách về việc giữ lại quyền lợi hoặc vị trí công việc cho nhân viên trở lại làm việc sau khi kết hôn không?
+    - Có các biện pháp nào để đảm bảo rằng nhân viên được hỗ trợ đầy đủ và thoải mái trong thời gian nghỉ cưới không?
+    - Có chính sách nào về việc chia sẻ thông tin về kế hoạch nghỉ cưới của nhân viên với các đồng nghiệp không?
+    - Có cơ hội tham gia các hoạt động tập thể hoặc sự kiện kỷ niệm cho nhân viên sau thời gian nghỉ cưới không?
+
+- intent: faq/wage_date
+  examples: |
+    - Tôi được nhận lương vào ngày nào
+    - Ngày nào trong tháng tôi sẽ nhận lương?
+    - Lịch trình chi trả lương của công ty là gì?
+    - Lương được chuyển khoản vào tài khoản của tôi vào ngày nào?
+    - Có quy định cụ thể về thời gian nhận lương không?
+    - Làm thế nào để biết khi nào lương sẽ được chuyển vào tài khoản?
+    - Ngày nhận lương có thể thay đổi không?
+    - Có thông báo nào trước khi lương được chuyển khoản không?
+    - Ngày nhận lương có phụ thuộc vào thời gian làm việc không?
+    - Có ngày nghỉ lễ hoặc cuối tuần nào ảnh hưởng đến việc nhận lương không?
+    - Làm thế nào để kiểm tra hoặc xác nhận khi lương được chuyển vào tài khoản?
+    - Có cách nào để thay đổi hoặc yêu cầu lịch trình chi trả lương không?
+    - Có sự chậm trễ nào trong quá trình chuyển khoản lương không?
+    - Có cách nào để nhận biết nếu có vấn đề nào về việc nhận lương không đúng hạn?
+    - Ngày nhận lương có thể thay đổi do các yếu tố nào?
+    - Có quy định về việc thay đổi hoặc điều chỉnh lịch trình chi trả lương không?
+    - Có ngày nhất định trong tuần hoặc tháng mà tất cả nhân viên đều nhận lương không?
+    - Làm thế nào để biết nếu tôi không nhận được lương vào ngày dự kiến?
+    - Có chính sách nào về việc cung cấp thông tin trước về lịch trình chi trả lương không?
+    - Có cách nào để thay đổi phương thức nhận lương từ chuyển khoản sang trả tiền mặt hoặc ngược lại không?
+    - Làm thế nào để kiểm tra lịch trình chi trả lương cho những tháng tiếp theo?
+
+- intent: faq/overtime_wage
+  examples: |
+    - Tiền lương khi tôi tăng ca vào ban đêm được tính như nào
+    - Có được phép làm thêm giờ không và nếu có thì thế nào?
+    - Làm thế nào để tính tiền lương khi tăng ca vào ban đêm?
+    - Có chính sách cụ thể nào về tiền lương tăng ca vào ban đêm không?
+    - Thủ tục tính toán tiền lương tăng ca vào ban đêm như thế nào?
+    - Có mức lương cố định cho tăng ca vào ban đêm không?
+    - Có phụ cấp hoặc tỷ lệ nào được áp dụng cho tăng ca vào ban đêm không?
+    - Làm thế nào để biết mức lương cụ thể khi tăng ca vào ban đêm?
+    - Có quy định nào về giờ làm việc tăng ca vào ban đêm không?
+    - Có phải làm việc một số giờ nhất định vào ban đêm để được tính là tăng ca không?
+    - Lương tăng ca vào ban đêm có được tính theo giờ hay theo ca làm việc không?
+    - Có quy định cụ thể về thời gian bắt đầu và kết thúc tăng ca vào ban đêm không?
+    - Có phân biệt giữa tăng ca vào ban đêm trong tuần và vào cuối tuần không?
+    - Lương tăng ca vào ban đêm có được tính vào lương cơ bản hàng tháng không?
+    - Có biện pháp nào để kiểm tra tính chính xác của tiền lương tăng ca vào ban đêm?
+    - Có cách nào để đảm bảo rằng lương tăng ca vào ban đêm được tính đúng cách không?
+    - Có phương pháp tính toán tiền lương tăng ca vào ban đêm dựa trên số giờ làm việc không?
+    - Có sự kiểm tra hoặc xác nhận nào về tính toán tiền lương tăng ca vào ban đêm không?
+    - Làm thế nào để yêu cầu kiểm tra hoặc làm rõ về tiền lương tăng ca vào ban đêm nếu cần thiết?
+    - Có chính sách nào về việc sửa đổi hoặc điều chỉnh tiền lương tăng ca vào ban đêm không?
+    - Có cách nào để xác định mức lương cụ thể cho tăng ca vào ban đêm cho từng nhân viên không?
+
+- intent: faq/holiday_overtime_wage
+  examples: |
+    - Thời gian làm việc có thay đổi trong các ngày lễ hay ngày nghỉ không?
+    - Vào những ngày lễ tôi tăng ca thì được tính lương như nào
+    - Làm thế nào để tính lương khi tôi tăng ca vào những ngày lễ?
+    - Có chính sách cụ thể nào về tiền lương tăng ca vào ngày lễ không?
+    - Quy trình tính toán tiền lương tăng ca vào những ngày lễ là gì?
+    - Có mức lương cố định cho tăng ca vào ngày lễ không?
+    - Có mức lương khác nhau cho tăng ca vào ban đêm vào các ngày lễ không?
+    - Có sự khác biệt trong cách tính lương tăng ca vào ngày lễ so với ngày thường không?
+    - Có phụ cấp hoặc tỷ lệ nào được áp dụng cho tăng ca vào ngày lễ không?
+    - Làm thế nào để biết mức lương cụ thể khi tăng ca vào ngày lễ?
+    - Có quy định nào về giờ làm việc tăng ca vào ngày lễ không?
+    - Có phải làm việc một số giờ nhất định vào ngày lễ để được tính là tăng ca không?
+    - Lương tăng ca vào ngày lễ có được tính theo giờ hay theo ca làm việc không?
+    - Có quy định cụ thể về thời gian bắt đầu và kết thúc tăng ca vào ngày lễ không?
+    - Có phân biệt giữa tăng ca vào ngày lễ trong tuần và vào cuối tuần không?
+    - Có mức lương khác nhau cho tăng ca vào ngày lễ trong các dịp lễ lớn và dịp lễ nhỏ không?
+    - Lương tăng ca vào ngày lễ có được tính vào lương cơ bản hàng tháng không?
+    - Có phương pháp tính toán tiền lương tăng ca vào ngày lễ dựa trên số giờ làm việc không?
+    - Làm thế nào để yêu cầu kiểm tra hoặc làm rõ về tiền lương tăng ca vào ngày lễ nếu cần thiết?
+    - Có biện pháp nào để kiểm tra tính chính xác của tiền lương tăng ca vào ngày lễ?
+    - Có sự kiểm tra hoặc xác nhận nào về tính toán tiền lương tăng ca vào ngày lễ không?
+    - Có cách nào để đảm bảo rằng lương tăng ca vào ngày lễ được tính đúng cách không?
+    - Có chính sách nào về việc sửa đổi hoặc điều chỉnh tiền lương tăng ca vào ngày lễ không?
+
+- intent: faq/maternity_pay_for_man
+  examples: |
+    - Chế độ hưởng lương thai sản cho nam ở công ty như thế nào
+    - Nhân viên nam có được hưởng chế độ lương thai sản không?
+    - Quy định về lương thai sản cho nhân viên nam là gì?
+    - Nhân viên nam được hưởng lương thai sản trong thời gian bao lâu?
+    - Có chính sách cụ thể nào về lương thai sản cho nhân viên nam không?
+    - Có điều kiện nào đặc biệt cần đáp ứng để được hưởng lương thai sản?
+    - Lương thai sản cho nhân viên nam được tính toán như thế nào?
+    - Có sự khác biệt nào trong chế độ lương thai sản giữa nam và nữ nhân viên không?
+    - Có hỗ trợ nào khác ngoài lương thai sản cho nhân viên nam không?
+    - Có quy định nào về thời gian nghỉ thai sản cho nhân viên nam không?
+    - Có quy định nào về việc sử dụng ngày nghỉ thai sản cho nhân viên nam không?
+    - Có quy định về việc chuyển đổi ngày nghỉ thai sản thành tiền mặt không?
+    - Có chế độ hỗ trợ tài chính nào khác cho nhân viên nam trong thời gian đẻ không?
+    - Có quy định nào về việc làm việc từ xa hoặc làm việc linh hoạt trong thời gian đẻkhông?
+    - Có các dịch vụ hỗ trợ nào khác cho nhân viên nam và gia đình trong thời gian đẻ không?
+    - Có quy định về việc trở lại làm việc sau thời gian nghỉ đẻ không?
+    - Có các tài liệu hoặc biểu mẫu cần thiết để đăng ký hưởng lương đẻ không?
+    - Có chính sách nào về việc bảo vệ quyền lợi của nam nhân viên trong thời gian đẻ không?
+
+- intent: faq/timekeeping_process
+  examples: |
+    - Quy trình chấm công và nhận lương diễn ra như nào
+    - Quy trình chấm công và nhận lương của công ty là gì?
+    - Các bước cụ thể trong quy trình chấm công và nhận lương là gì?
+    - Ai là người chịu trách nhiệm chấm công và xác nhận thông tin lương?
+    - Thông tin nào được yêu cầu để chấm công đúng cách?
+    - Có hệ thống chấm công tự động hay cần thao tác thủ công?
+    - Quy trình xác nhận thông tin chấm công được thực hiện như thế nào?
+    - Thông tin nào được kiểm tra và xác nhận trong quy trình chấm công?
+    - Có quy định cụ thể về việc điều chỉnh chấm công khi cần thiết không?
+    - Sau khi chấm công, thủ tục nhận lương được thực hiện như thế nào?
+    - Có hình thức nào để xác minh tính chính xác của thông tin lương nhận được không?
+    - Làm thế nào để đảm bảo rằng thông tin lương được xử lý một cách an toàn và bảo mật?
+    - Có quy trình nào để giải quyết các vấn đề hoặc tranh chấp liên quan đến chấm công và lương không?
+    - Có các bước nào để xác nhận rằng lương đã được thanh toán đúng cách và đúng hạn không?
+    - Có hệ thống cảnh báo hoặc thông báo cho nhân viên nếu có sự thay đổi trong quy trình chấm công và nhận lương không?
+    - Ai là người liên lạc chính trong trường hợp có câu hỏi hoặc thắc mắc về quy trình chấm công và nhận lương?
+    - Có quy định nào về việc báo cáo sớm về bất kỳ sai sót hoặc vấn đề nào trong quy trình chấm công không?
+    - Có sự kiểm tra độ chính xác hoặc đánh giá định kỳ về quy trình chấm công và nhận lương không?
+    - Làm thế nào để tiếp cận thông tin liên quan đến quy trình chấm công và nhận lương nếu cần thiết?
+    - Có hướng dẫn hoặc tài liệu nào cung cấp thông tin chi tiết về quy trình chấm công không?
+
+- intent: faq/forget_timekeeping
+  examples: |
+    - Tôi quên chấm công thì phải làm sao
+    - Nếu tôi quên chấm công, tôi phải báo cáo cho ai?
+    - Quy trình xử lý khi quên chấm công là gì?
+    - Có biện pháp nào cụ thể để sửa chấm công sau khi đã quên không?
+    - Quy định về việc bổ sung chấm công sau khi quên là gì?
+    - Ai sẽ thực hiện việc bổ sung chấm công sau khi tôi quên?
+    - Có mất phí nào hoặc hình phạt nào áp đặt khi quên chấm công không?
+    - Có chính sách nào về việc bổ sung chấm công sau thời hạn quy định không?
+    - Tôi cần cung cấp thông tin gì khi báo cáo việc quên chấm công?
+    - Quy trình xác nhận việc bổ sung chấm công là gì?
+    - Có cách nào để đảm bảo rằng việc bổ sung chấm công được thực hiện đúng cách không?
+    - Có cần thiết phải cung cấp lý do cho việc quên chấm công không?
+    - Có chính sách nào về việc giữ lại hoặc lưu trữ thông tin về việc quên chấm công không?
+    - Có quy định về việc thông báo trước khi bổ sung chấm công không?
+    - Có quy định về thời hạn cho việc bổ sung chấm công không?
+    - Có quy định về việc sửa đổi hoặc điều chỉnh chấm công sau khi đã quên không?
+    - Có cơ hội phản hồi về việc bổ sung chấm công không?
+    - Có hướng dẫn cụ thể nào về việc thực hiện quy trình bổ sung chấm công không?
+
+- intent: faq/first_day
+  examples: |
+    - Ngày đầu vào công ty tôi cần làm gì
+    - Quy trình đón tiếp và giới thiệu cho nhân viên mới new_staff là gì?
+    - Có phiếu hướng dẫn hoặc tài liệu nào cần được hoàn thành trong ngày đầu vào không?
+    - Có buổi hướng dẫn hoặc buổi gặp gỡ nào được tổ chức cho nhân viên mới không?
+    - Có quy định cụ thể về việc làm giấy tờ hoặc thủ tục nhân sự vào ngày đầu làm việc không?
+    - Có quy định về việc đào tạo hoặc hướng dẫn cơ bản trong ngày đầu làm việc không?
+    - Có thông tin nào cần biết về môi trường làm việc hoặc các nguyên tắc cơ bản trong ngày đầu vào không?
+    - Có cuộc họp chào mừng hoặc buổi giới thiệu nào được tổ chức cho nhân viên mới không?
+    - Có hướng dẫn nào về việc sử dụng các tài nguyên và cơ sở vật chất trong công ty không?
+    - Có quy định về việc giới thiệu với đồng nghiệp và các thành viên khác trong công ty không?
+    - Có chính sách nào về việc hướng dẫn về an toàn và sức khỏe lao động trong ngày đầu vào không?
+    - Có buổi hướng dẫn về hệ thống máy tính, email, và các công cụ làm việc cơ bản không?
+    - Có thông tin nào về nền văn hóa và giá trị của công ty được chia sẻ trong ngày đầu vào không?
+    - Có cơ hội gặp gỡ và giao lưu với các quản lý hoặc các nhân viên khác trong ngày đầu vào không?
+    - Có cơ hội làm quen với các văn phòng và khu vực làm việc khác trong ngày đầu vào không?
+    - Có hướng dẫn về việc sử dụng hệ thống quản lý thời gian, chấm công, và hệ thống nội bộ không?
+    - Có thông tin nào về các chính sách và quy định công ty cần biết trong ngày đầu vào không?
+    - Có buổi hướng dẫn về quy trình báo cáo sự cố, yêu cầu hỗ trợ, hoặc góp ý không?
+    - Có thông tin nào về việc sử dụng các phương tiện vận chuyển công ty hoặc bãi đậu xe không?
+    - Có quy định về việc tiếp nhận và làm quen với nền văn hóa làm việc trong ngày đầu vào không?
+    - Có cơ hội để đặt câu hỏi và làm rõ mọi thắc mắc trong ngày đầu vào không?
